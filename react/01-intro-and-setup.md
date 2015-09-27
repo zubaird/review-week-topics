@@ -21,11 +21,9 @@ Let's get started!
 
 ### What is React?
 
-According to the official React introduction, Angular is a-
+According to the official React introduction,  is a-
 
-> client-side technology, written entirely in JavaScript. It works with the long-established technologies of the web (HTML, CSS, and JavaScript) to make the development of web apps easier and faster than ever before.
-
-It boils down to this: **.**
+> A JavaScript Library For Building User Interfaces
 
 ### Essential Things To Know, Terms and Concepts
 
