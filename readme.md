@@ -1,6 +1,6 @@
 ## Break Week
 
-Include some things about this week....
+Welcome to the self guided materials for your review/break week. The most important thing you can do this week is take at least a day or two to relax and step away from coding! It is *ESSENTIAL* that you give yourself some time to  
 
 [Command Line](./terminal)
 
@@ -15,3 +15,5 @@ Include some things about this week....
 [Node and Express](./node+express)
 
 [React](./react)
+
+[Ruby](./ruby)

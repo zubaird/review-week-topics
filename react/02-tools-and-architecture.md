@@ -9,13 +9,16 @@
 
 ## Installing React Developer Tools
 
+You can install them [here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+
 ### Using the React Developer Tools
 
 Anytime you are working with a page that is using react, you can open up the Chrome developer tools and head to the 
 
 ### Installing react-detector
 
-Another very useful Chrome extention is react-detector, which will show you webistes that are using react. You can then head to the Chrome developer tools and in the react console, you can examine the components in greater detail.
+Another very useful Chrome extention is react-detector, which will show you webistes that are using react. You can then head to the Chrome developer tools and in the react console, you can examine the components in greater detail. You can install it [here](https://chrome.google.com/webstore/detail/react-detector/jaaklebbenondhkanegppccanebkdjlh?hl=en-US)
 
 ### How To Start Thinking In React
 
@@ -24,10 +27,9 @@ Another very useful Chrome extention is react-detector, which will show you webi
 ### Next Steps
 
 
-
 ## Questions 
 
 Who is using react? [https://www.airbnb.com/](https://www.airbnb.com/)
-What does it look like?
+How are they using it? What does their component structure look like?
 Visualize a page...how would it be done in react?
 
