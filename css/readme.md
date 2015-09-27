@@ -29,4 +29,6 @@ Looking for some extra practice with selectors? Check this fun game out:
 
 [http://sass-lang.com/](http://sass-lang.com/)
 
+[https://scotch.io/tutorials/getting-started-with-sass](https://scotch.io/tutorials/getting-started-with-sass) 
+
 [http://leveluptuts.com/tutorials/sass-tutorials](http://leveluptuts.com/tutorials/sass-tutorials)

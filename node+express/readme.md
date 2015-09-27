@@ -1,4 +1,4 @@
-## Using AJAX with Express
+## Using AJAX with Express/Mongoose
 
 ## AJAX Calls to Your Server (Basic Single Page Apps)
 
