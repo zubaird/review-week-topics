@@ -2,14 +2,14 @@
 
 Unit 1:
 
- * [Intro and Setup](/Unit-1/01-intro-and-setup.md)
- * [Tools and Architecture](/Unit-1/02-tools-and-architecture.md)
- * [Props](/Unit-1/03-props.md)
- * [Events](/Unit-1/04-react-events.md)
- * [State](/Unit-1/05-state.md)
- * [Refs and Multiple Components](/Unit-1/06-refs-and-multiple-components.md)
+ * [Intro and Setup](01-intro-and-setup.md)
+ * [Tools and Architecture](02-tools-and-architecture.md)
+ * [Props](03-props.md)
+ * [Events](04-react-events.md)
+ * [State](05-state.md)
+ * [Refs and Multiple Components](06-refs-and-multiple-components.md)
  * [The Component Life Cycle](/07-component-life-cycle.md)
- * [React Todo](/Unit-1/08-assessment-react-todo.md)
+ * [React Todo](08-assessment-react-todo.md)
  
 Additional Resources
 
