@@ -6,14 +6,12 @@
 * Explain the role of the virtual DOM in React
 * List advantages for using JSX
 
-
 ### How This Curriculum Works
 
 Before you move on to the next lesson, you should:
 
 * Complete all exercises and SAVE EVERY EXERCISE FOR FUTURE USE
 * Answer all questions in ONE MARKDOWN FILE
-* 
 
 Be prepared to review your exercises with instructors and peers as well as engage in discussions about the questions.
 
