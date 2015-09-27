@@ -14,4 +14,3 @@ Unit 1:
 Additional Resources
 
  * [http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
- 
