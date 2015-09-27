@@ -14,3 +14,4 @@ Unit 1:
 Additional Resources
 
  * [http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
+ * [http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)

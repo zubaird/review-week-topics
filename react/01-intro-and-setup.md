@@ -181,13 +181,14 @@ React.render(<HelloWorld/>, document.body)
 * Why is it preferable to use JSX?
 * Is React a templating language?
 * Why is React different than other frameworks like Angular, Ember and Backbone?
-* SOMETHING ABOUT ADDING A CLASS
-* THIS WARNING! You are using the in-browser JSX transformer. Be sure to precompile your JSX for production - http://facebook.github.io/react/docs/tooling-integration.html#jsx
-* ADDING MULTIPLE ELEMENTS JS SEMICOLON INSERTION
+* What is the virtual DOM?
+* In our Hello World example, if you open the chrome developer tools you will see this warning in the console, "You are using the in-browser JSX transformer. Be sure to precompile your JSX for production - http://facebook.github.io/react/docs/tooling-integration.html#jsx". What does this mean? How do we remove it in production?
 
+## Assignment 
+
+- Rebuild the Hello World Example from scratch. Work your way through the bugs you encounter (see the Things are Breaking section if you are stuck).
 
 ## Resources
 
 * [React Docs](http://facebook.github.io/react/index.html)
-* 
-* 
+* [Intro to React](http://developer.telerik.com/featured/introduction-to-the-react-javascript-framework/)

@@ -11,7 +11,6 @@
 
 You can install them [here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
-
 ### Using the React Developer Tools
 
 Anytime you are working with a page that is using react, you can open up the Chrome developer tools and head to the 
@@ -20,16 +19,25 @@ Anytime you are working with a page that is using react, you can open up the Chr
 
 Another very useful Chrome extention is react-detector, which will show you webistes that are using react. You can then head to the Chrome developer tools and in the react console, you can examine the components in greater detail. You can install it [here](https://chrome.google.com/webstore/detail/react-detector/jaaklebbenondhkanegppccanebkdjlh?hl=en-US)
 
-### How To Start Thinking In React
+### Using Bower as a replacement for the CDN
 
-[https://facebook.github.io/react/docs/thinking-in-react.html](https://facebook.github.io/react/docs/thinking-in-react.html)  
+If you want to start using Bower instead of a CDN, learn some more about it [here](../bower) and then run `bower init` and then `bower install react --save`. Make sure to add `bower_components` to your `.gitignore`.
 
-### Next Steps
+## Questions
+ 
+* What is a React component?
+* Take a look at the following pages using react-detector and the react developer tools, how are they using React? What does their component structure look like? (or pick a couple apps from [this](https://github.com/facebook/react/wiki/Sites-Using-React) link and examine them)
+    - [https://www.airbnb.com/](https://www.airbnb.com/)
+    - [https://www.facebook.com/](https://www.facebook.com/)
+    - [https://www.codecademy.com/](https://www.codecademy.com/)
+    - [https://www.coursera.org/](https://www.coursera.org/)
+    - [http://imgur.com/](http://imgur.com/)
+    - [https://instagram.com/](https://instagram.com/)
+* What are props? 
 
+## Assignment
 
-## Questions 
+* Read [this](https://facebook.github.io/react/docs/thinking-in-react.html) article. It is a great entry point to thinking about React components and architecture.
+* Rebuild the Hello World Assignment using Bower instead of the React CDN. 
 
-Who is using react? [https://www.airbnb.com/](https://www.airbnb.com/)
-How are they using it? What does their component structure look like?
-Visualize a page...how would it be done in react?
 
