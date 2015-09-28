@@ -25,4 +25,5 @@ this method runs before the component will unmount
 ## Assignment
 
 * Read [this](http://javascript.tutorialhorizon.com/2014/09/13/execution-sequence-of-a-react-components-lifecycle-methods/) article on the react component life cycle
-* TODO (OMDB API example with AJAX? )
+* OMDB Assignment
+* Github Assignment
