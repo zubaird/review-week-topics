@@ -5,7 +5,6 @@
 - Use the Chrome React Dev Tools to examine and debug applications 
 - Examine other React applications using react-detector
 - Include React using Bower
-- Understand what component base architecture is with React
 
 ## Installing React Developer Tools
 
@@ -13,7 +12,7 @@ You can install them [here](https://chrome.google.com/webstore/detail/react-deve
 
 ### Using the React Developer Tools
 
-Anytime you are working with a page that is using react, you can open up the Chrome developer tools and head to the 
+Anytime you are working with a page that is using react, you can open up the Chrome developer tools and head to the React tab and check out what the component structure looks like as well as state and props (which we will learn about later on).
 
 ### Installing react-detector
 
