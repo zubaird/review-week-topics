@@ -6,7 +6,7 @@ var App = React.createClass({
     };
   },
   componentDidMount: function(){
-    this.refs.nameInput.getDOMNode().focus();
+    React.findDOMNode(this.refs.nameInput).focus();
   },
   update: function(e){
     this.setState({txt: e.target.value})

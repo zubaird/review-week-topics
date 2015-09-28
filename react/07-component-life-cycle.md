@@ -8,10 +8,13 @@
 ## Introduction
 
 ## The Component LifeCycle
-* componentWillMount – Fired before the component will mount
-* componentDidMount – Fired after the component mounted
-* componentWillReceiveProps – Fired whenever there is a change to props
-* componentWillUnmount – Fired before the component will unmount
+
+You can read all about the various methods [here](https://facebook.github.io/react/docs/<component-specs class="html"></component-specs>)
+
+* componentWillMount – runs before the component mounts
+* componentDidMount – runs after the component is mounted
+* componentWillReceiveProps – runs whenever there is a change to props
+* componentWillUnmount – runs before the component will unmount
 
 ## Questions
 
