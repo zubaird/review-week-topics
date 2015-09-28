@@ -1,4 +1,4 @@
-var Test = React.createClass({
+var App = React.createClass({
   getInitialState: function() {
     return {
       checked:false
@@ -25,7 +25,7 @@ var Test = React.createClass({
     );
   },
   sayHi: function(){
-    console.log("AWESOME!");
+    console.log("Hello!")
   },
   handleCheck: function(){
     this.setState({
@@ -46,4 +46,4 @@ var Test = React.createClass({
   }
 });
 
-React.render(<Test text="AWESOME!"/>, document.body);
+React.render(<App text="AWESOME!"/>, document.body);

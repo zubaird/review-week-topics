@@ -2,6 +2,9 @@
 
 ## Objectives
 
+- Understand the component life cycle
+- Manipulate components 
+
 
 Component LifeCycle
     componentWillMount – Fired before the component will mount

@@ -1,7 +1,7 @@
 var Checkbox = React.createClass({
     getInitialState: function(){
       return {
-        isChecked: "no"
+        isChecked: false
       }
     },
     toggleChecked: function(e){
@@ -10,12 +10,23 @@ var Checkbox = React.createClass({
       })
     },
     render: function(){
-      return (
-        <div>
-          <h1>Is it checked? The answer is: {this.state.isChecked}</h1>
-          <input type="checkbox" onChange={this.toggleChecked}/>
-        </div>
-        )
+
+        if(!this.state.isChecked){
+        return (
+          <div>
+            <h1>Is it checked? {this.state.isChecked} NAHHH</h1>
+            <input type="checkbox" onChange={this.toggleChecked}/>
+          </div>
+          )
+        }
+        else {
+          return (
+            <div>
+              <h1>Is it checked? {this.state.isChecked} WOOHOO!</h1>
+              <input type="checkbox" onChange={this.toggleChecked}/>
+            </div>
+            )
+        }
   }
 })
 
