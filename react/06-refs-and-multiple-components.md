@@ -67,4 +67,7 @@ Refs are a great way to send a message to a particular child instance in a way t
 ## Assignment
 
 * Read [this](https://facebook.github.io/react/docs/more-about-refs.html#summary) summary on refs - it is essential to understand when and when not to use them.
-* TODO
+* Read [this](http://stackoverflow.com/questions/25941585/react-refs-with-components) post on when to NOT use refs
+* Watch [this](https://egghead.io/lessons/react-using-refs-to-access-components) video and build the application. Refactor this app to use the React.findDOMNode method.
+* Form Challenge
+  - 

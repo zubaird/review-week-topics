@@ -1,49 +1,83 @@
 var App = React.createClass({
-  getInitialState: function() {
+  getInitialState: function(){
     return {
-      red: 128,
-      green: 128,
-      blue: 128,
-    };
+      val: "",
+      checkboxVal: false,
+      radioVal: false
+    }
   },
-  update: function(e){
+  update: function(text,checkboxVal,radioVal){
     this.setState({
-      // we have to add the refs.inp to reference the div
-      // using getDOMNode only works for one
-
-      red: React.findDOMNode(this.refs.red.refs.input).value
-      green: React.findDOMNode(this.refs.green.refs.input).value
-      blue: React.findDOMNode(this.refs.blue.refs.input).value
+      val: text,
+      checkboxVal: checkboxVal,
+      radioVal: radioVal
     })
   },
-  render:function(){
-    var colorStyle = {
-      backgroundColor:"rgb(" + this.state.red + "," + this.state.green + "," + this.state.blue + ")",
-
-    }
+  renderFormWithNiceHeader: function(){
     return (
-      <div style={{textAlign: "center"}}> {this.props.txt}
-        <div > R: {this.state.red} G: {this.state.green} B: {this.state.blue}
-          <div style={colorStyle}>
-            <Slider ref="red" update={this.update} />
-            <Slider ref="green" update={this.update}/>
-            <Slider ref="blue" update={this.update}/>
-          </div>
-        </div>
+      <div>
+        <Header>Yeah!</Header>
+        <h1>Form Values</h1>
+        <ul>
+          <li>Input: {this.state.val}</li>
+          <li>Checkbox: {this.state.checkboxVal.toString()}</li>
+          <li>Radio: {this.state.radioVal.toString()}</li>
+        </ul>
+        <Form onCustomSubmit={this.update}/>
       </div>
-      );
+      )
+  },
+  renderFormWithMeanHeader: function(){
+    return (
+      <div>
+        <Header>Boo!</Header>
+        <h1>Form Values</h1>
+        <ul>
+          <li>Input: {this.state.val}</li>
+          <li>Checkbox: {this.state.checkboxVal}</li>
+          <li>Radio: {this.state.radioVal}</li>
+        </ul>
+        <Form onCustomSubmit={this.update}/>
+      </div>
+      )
+  },
+  render: function() {
+    if(this.state.checkboxVal){
+      return this.renderFormWithNiceHeader()
+    } else {
+      return this.renderFormWithMeanHeader()
+    }
   }
 });
 
-var Slider = React.createClass({
+var Header = React.createClass({
+  render: function() {
+    return (
+      <h1>{this.props.children}</h1>
+    );
+  }
+});
+
+var Form = React.createClass({
+  captureValue: function(e){
+    e.preventDefault();
+    var inputText = React.findDOMNode(this.refs.text).value
+    var checkboxValue = React.findDOMNode(this.refs.checkbox).checked
+    var radioValue = React.findDOMNode(this.refs.radio).checked
+    this.props.onCustomSubmit(inputText,checkboxValue,radioValue)
+  },
   render: function() {
     return (
       <div>
-        <input ref="input" type="range" min="0" max="255" onChange={this.props.update} />
+        <form onSubmit={this.captureValue}>
+          <input type="text" ref="text"/>
+          <input type="checkbox" ref="checkbox" />
+          <input type="radio" ref="radio" />
+          <input type="submit" value="Change things!" />
+        </form>
       </div>
     );
   }
 });
 
-React.render(<App txt="My First Color Slider!"/>, document.body);
-
+React.render(<App/>,document.body)

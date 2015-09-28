@@ -20,3 +20,4 @@ You've made it to the end of this unit, congratulations! Your assignment is to b
  * [http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
  * [http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)
  * [http://ricostacruz.com/cheatsheets/react.html](http://ricostacruz.com/cheatsheets/react.html)
+ * [https://egghead.io/series/react-fundamentals](https://egghead.io/series/react-fundamentals)
