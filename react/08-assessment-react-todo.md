@@ -13,4 +13,9 @@ You've made it to the end of this unit, congratulations! Your assignment is to b
 ## Bonuses 
 
 - Add a Backend! Save your todos to a database and use AJAX to perform CRUD on them. 
-- Separate Your Components into different files (research module loaders)
+- Separate Your Components into different files. Instead of using multiple script tags, use a tool like [browserify](http://browserify.org/) or [webpack](https://webpack.github.io/) to create modules on the front-end!
+
+## Additional Resources To Keep Learning
+
+ * [http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
+ * [http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)

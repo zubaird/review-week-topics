@@ -11,7 +11,3 @@ Unit 1:
  * [The Component Life Cycle](/07-component-life-cycle.md)
  * [React Todo](08-assessment-react-todo.md)
  
-Additional Resources
-
- * [http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/](http://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/)
- * [http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)
