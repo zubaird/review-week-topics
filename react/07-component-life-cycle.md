@@ -1,4 +1,4 @@
-# The Component Life Cycle
+# The Component Life Cycle 
 
 ## Objectives
 
@@ -20,10 +20,14 @@ this method runs before the component will unmount
 
 ## Questions
 
-* TODO
+* Describe 5 methods in the component life cycle
+* What kinds of things would we do in the componentWillMount method?
+* What kinds of things would we do in the componentDidMount method?
+* What kinds of things would we do in the componentWillUnmount method?
+* In [this](https://facebook.github.io/react/tips/initial-ajax.html) example, inside the `componentDidMount` method, we are using `.bind(this)`. What does this do? What happens if we omit the `bind` method?
 
 ## Assignment
 
 * Read [this](http://javascript.tutorialhorizon.com/2014/09/13/execution-sequence-of-a-react-components-lifecycle-methods/) article on the react component life cycle
-* OMDB Assignment
-* Github Assignment
+* Github Assignment 
+* OMDB Assignment 
