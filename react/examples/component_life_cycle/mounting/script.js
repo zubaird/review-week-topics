@@ -1,8 +1,7 @@
 var App = React.createClass({
   getInitialState: function() {
     return {
-      txt: "blah",
-      id: 0
+      txt: ""
     };
   },
   componentDidMount: function(){

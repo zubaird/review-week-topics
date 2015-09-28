@@ -7,14 +7,16 @@
 
 ## Introduction
 
-## The Component LifeCycle
+As we build larger React applications that contain multiple components, there will be times where we want to change props, state or any other information depending on the component life cycle. For example, You might want to per­form cer­tain actions when a new com­po­nent instance is ini­tial­ized or destroyed. You can read all about the various methods [here](https://facebook.github.io/react/docs/<component-specs class="html"></component-specs>), but here are some methods we will discuss in more detail:
 
-You can read all about the various methods [here](https://facebook.github.io/react/docs/<component-specs class="html"></component-specs>)
+### componentWillMount 
+this method runs before the component mounts
 
-* componentWillMount – runs before the component mounts
-* componentDidMount – runs after the component is mounted
-* componentWillReceiveProps – runs whenever there is a change to props
-* componentWillUnmount – runs before the component will unmount
+### componentDidMount 
+this method runs after the component is mounted
+
+### componentWillUnmount 
+this method runs before the component will unmount
 
 ## Questions
 
@@ -22,4 +24,5 @@ You can read all about the various methods [here](https://facebook.github.io/rea
 
 ## Assignment
 
+* Read [this](http://javascript.tutorialhorizon.com/2014/09/13/execution-sequence-of-a-react-components-lifecycle-methods/) article on the react component life cycle
 * TODO (OMDB API example with AJAX? )

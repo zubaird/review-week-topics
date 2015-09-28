@@ -10,12 +10,6 @@ var App = React.createClass({
   componentDidMount: function(){
     console.log('DID MOUNT JUST RAN!')
   },
-  // componentWillReceiveProps: function(nextProps) {
-  //   console.log("next props?", nextProps)
-  //   this.setState({
-  //     text: "awesome"
-  //   });
-  // },
   componentWillUnmount: function(){
     console.log('WILL UNMOUNT JUST RAN!')
   },
