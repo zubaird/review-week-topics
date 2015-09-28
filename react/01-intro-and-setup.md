@@ -10,10 +10,15 @@
 
 Before you move on to the next lesson, you should:
 
-* Answer all questions in ONE MARKDOWN FILE
-* Complete all of the assignments 
+* Answer all the readme questions
+* Complete all of the assignments in the readme
 
-Let's get started!
+### Keys for Success
+
+* STAY CURIOUS! Keep googling and searching for answers, the React community is growing rapidly and there are already many excellent resources online to learn more about it.
+* Feeling stuck? Do your best to google for the answer, and if you are unable to find a solution, post your questions on StackOverflow! If you are absolutely stuck, ask an instructor, but we will ask to see all the research you have done to solve the problem first!
+
+Now let's get started!
 
 ### What is React?
 

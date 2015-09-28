@@ -159,11 +159,11 @@ Take a look at this example in the console and what do you see? The child's prop
 * What does the getInitialState method do? What does it return?
 * What does the setState method do?
 * What are the differences between state and props? When do you use each?
-*
 
 ## Assignment
 
 * Read [this](https://medium.com/react-tutorials/react-state-14a6d4f736f5) Tutorial
 * Presidents Challenge
   - Create Three components, PresidentList, AddPresident and President. 
-  - FINISH THIS!
+  - FINISH THIS! 
+  - Include hints about e.target / concat instead of push 
