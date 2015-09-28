@@ -126,8 +126,8 @@ Staying true to an iterative approach to coding, we'll start slow, defining ever
 <head>
   <meta charset="UTF-8">
   <title>Render</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/JSXTransformer.js"></script>
+  <script src="https://fb.me/react-0.13.3.js"></script>
+  <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
   <script type="text/jsx">
     React.render(<h1>Hello World</h1>, document.body);
   </script>
