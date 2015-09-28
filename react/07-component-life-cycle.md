@@ -18,6 +18,8 @@ You can read all about the various methods [here](https://facebook.github.io/rea
 
 ## Questions
 
+* TODO
+
 ## Assignment
 
-TODO
+* TODO
