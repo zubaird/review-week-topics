@@ -18,13 +18,11 @@ var BookList = React.createClass({
     return (
       <ul>
         {this.books}
-        // {this.props.children}
       </ul>
     )
   }
 });
 
-React.render(<BookList>,document.getElementById("bookList"))
-
 // example with this.props.children
   // React.render(<BookList>Awesome</BookList>,document.getElementById("bookList"))
+React.render(<BookList/>,document.getElementById("bookList"))
