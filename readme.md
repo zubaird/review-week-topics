@@ -16,6 +16,8 @@ If you are interested in reviewing and learning new things about the following t
 
 [Node and Express](./node+express)
 
+[Mongo and Mongoose](./mongo+mongoose)
+
 [React](./react)
 
 [Ruby](./ruby)
