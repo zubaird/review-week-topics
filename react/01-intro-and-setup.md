@@ -10,26 +10,23 @@
 
 Before you move on to the next lesson, you should:
 
-* Complete all exercises and SAVE EVERY EXERCISE FOR FUTURE USE
 * Answer all questions in ONE MARKDOWN FILE
-
-Be prepared to review your exercises with instructors and peers as well as engage in discussions about the questions.
+* Complete all of the assignments 
 
 Let's get started!
 
 ### What is React?
 
-According to the official React introduction,  is a-
+According to the official React introduction, React is a-
 
 > A JavaScript Library For Building User Interfaces
 
-React is a view library by Facebook.
+Essentially, React is a view library by Facebook.
 
 React is a powerful tool for only a couple reasons:
 * Does one thing and does it well. That "one thing" being a view library.
 * Everything is a **component** in React.
 * Updates the DOM very quickly using React's **virtual DOM**.
-
 
 ### What does React code look like?
 
@@ -181,8 +178,8 @@ React.render(<HelloWorld/>, document.body)
 * Why is it preferable to use JSX?
 * Is React a templating language?
 * Why is React different than other frameworks like Angular, Ember and Backbone?
-* What is the virtual DOM?
-* In our Hello World example, if you open the chrome developer tools you will see this warning in the console, "You are using the in-browser JSX transformer. Be sure to precompile your JSX for production - http://facebook.github.io/react/docs/tooling-integration.html#jsx". What does this mean? How do we remove it in production?
+* What is the virtual DOM? 
+* In our Hello World example, if you open the chrome developer tools you will see this warning in the console, "You are using the in-browser JSX transformer. Be sure to precompile your JSX for production - http://facebook.github.io/react/docs/tooling-integration.html#jsx". What does this mean? How do we handle this in production?
 
 ## Assignment 
 
