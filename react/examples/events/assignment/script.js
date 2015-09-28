@@ -5,11 +5,12 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
+      <h1>{this.props.children}</h1>
         <button style={{padding:"20px", marginBottom:"20px"}} onClick={this.sayHi}>
-          Hello World!Z
+          Hello World!
         </button>
 
-        <Form>Awesome</Form>
+        <Form/>
       </div>
     );
   }
@@ -32,7 +33,6 @@ var Form = React.createClass({
   },
   render: function() {
     return (
-      <h1>{this.props.children}<h1>
       <div onMouseLeave={this._handleHover} className="form">
         <form onSubmit={this._handleSubmit}>
           <div>
@@ -51,4 +51,4 @@ var Form = React.createClass({
   }
 });
 
-React.render(<App>This is our app!</App>,document.body)
+React.render(<App>React Events!</App>,document.body)
