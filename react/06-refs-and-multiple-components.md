@@ -61,7 +61,8 @@ Refs are a great way to send a message to a particular child instance in a way t
 ## Questions
 
 * What are refs? Why do we use them?
-* 
+* How do we access information from refs? What method do we use?
+* What are some of the benefits of refs? What are some drawbacks or anti-patterns to watch out for? (Check out the summary from the react docs for some hints)
 
 ## Assignment
 
