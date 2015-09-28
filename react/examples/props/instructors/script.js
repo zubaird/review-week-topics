@@ -23,9 +23,9 @@ var InstructorList = React.createClass({
     );
   }
 // // Can also be written like this:
-  // people:instructors.map(function (instructor) {
+  // people:instructors.map(function (instructor,i) {
   //     return (
-  //       <Instructor name={instructor}/>
+  //       <Instructor key = {i} name={instructor}/>
   //     );
   //   }),
   // render: function() {
