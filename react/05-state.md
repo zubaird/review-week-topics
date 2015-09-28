@@ -116,15 +116,54 @@ You can read a great answer [here](https://github.com/uberVU/react-guide/blob/ma
     React.render(<Checkbox/>, document.body)
 ```
 
+## Passing State From Parent Components as Props to Children
+
+As we've seen, state is a fantastic way of managing the changes to a component, but we can also use it to pass down data to children components as their props. Let's review this example:
+
+```
+var Parent = React.createClass({
+  getInitialState: function(){
+    return {
+      names: ["tom", "sarah"]
+    }
+  },
+  render: function() {
+    console.log("Parent's State", this.state)
+    return (
+      <div>
+        <Child firstName={this.state.names}/>
+      </div>
+    );
+  }
+});
+
+var Child = React.createClass({
+  render: function() {
+    console.log("Child's Props", this.props)
+    return (
+      <div>
+        CHECK YOUR CHROME CONSOLE!
+      </div>
+    );
+  }
+});
+
+React.render(<Parent/>, document.body)
+```
+
+Take a look at this example in the console and what do you see? The child's props are the same as the parent's state! How cool is that? This means that we can use the parent's state to manage any changes to the props of its children. We pass props to children through state and manipulate it by using the `setState` method. 
+
 ## Questions
 
 * What is state?
 * What does the getInitialState method do? What does it return?
 * What does the setState method do?
 * What are the differences between state and props? When do you use each?
-
+*
 
 ## Assignment
 
 * Read [this](https://medium.com/react-tutorials/react-state-14a6d4f736f5) Tutorial
-* TODO
+* Presidents Challenge
+  - Create Three components, PresidentList, AddPresident and President. 
+  - FINISH THIS!

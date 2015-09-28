@@ -1,49 +1,58 @@
-var App = React.createClass({
-  getInitialState: function() {
+var PresidentsList = React.createClass({
+  getInitialState: function(){
     return {
-      checked:false
-    };
+      presidents: ["Washington", "Adams","Jefferson"]
+    }
   },
-  renderPage: function(){
-    return (
-      <div>
-        <input onChange={this.handleCheck} type="checkbox" defaultChecked={this.state.checked} />
-        <button onClick={this.sayHi}>{this.props.text}</button>
-        <h2>{this.displayMessage()}</h2>
-        <h1>Hello from Unchecked Page!!</h1>
-      </div>
-    );
-  },
-  renderOtherPage: function(){
-    return (
-      <div>
-        <input onChange={this.handleCheck} type="checkbox" defaultChecked={this.state.checked} />
-        <button onClick={this.sayHi}>{this.props.text}</button>
-        <h2>{this.displayMessage()}</h2>
-        <h1>Hello from Checked Page!!</h1>
-      </div>
-    );
-  },
-  sayHi: function(){
-    console.log("Hello!")
-  },
-  handleCheck: function(){
+  addNewPresident: function(president){
     this.setState({
-      checked: !this.state.checked
-    });
-  },
-  displayMessage:function(){
-    return this.state.checked ? "Checked" : "Unchecked";
+      presidents: this.state.presidents.concat([president])
+    })
   },
   render: function() {
-    if(this.state.checked){
-      return this.renderOtherPage();
-    }
-    else {
-      return this.renderPage();
-    }
-
+    return (
+      <div>
+        <AddPresident addNew={this.addNewPresident}/>
+        <President lastNames={this.state.presidents}/>
+      </div>
+    );
   }
 });
 
-React.render(<App text="AWESOME!"/>, document.body);
+var AddPresident = React.createClass({
+  handleAddNewPresident: function(e){
+    e.preventDefault();
+    this.props.addNew(e.target.childNodes[0].value)
+    e.target.childNodes[0].value = ""
+    e.target.childNodes[0].focus();
+  },
+  render: function(){
+    return (
+    <div>
+      <form onSubmit={this.handleAddNewPresident}>
+        <input type="text" autoFocus/>
+        <input  type="submit" value="Add a President"/>
+      </form>
+    </div>
+    )
+  }
+});
+
+var President = React.createClass({
+  render: function(){
+    var list = this.props.lastNames.map(function(president, i){
+      return (
+        <li key ={i}>{president}</li>
+        )
+    })
+    return (
+      <div>
+        <ul>
+          {list}
+        </ul>
+      </div>
+      )
+  }
+})
+
+React.render(<PresidentsList/>, document.body)
