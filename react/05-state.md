@@ -116,8 +116,6 @@ You can read a great answer [here](https://github.com/uberVU/react-guide/blob/ma
     React.render(<Checkbox/>, document.body)
 ```
 
-
-
 ## Questions
 
 * What is state?
