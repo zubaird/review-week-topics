@@ -2,11 +2,7 @@
 
 [https://facebook.github.io/react/docs/events.html](https://facebook.github.io/react/docs/events.html)
 
-Events
-onClick
-onSubmit
-onChange
-
+To include an event in your
 
 ## Questions 
 
