@@ -128,7 +128,7 @@ var Parent = React.createClass({
     }
   },
   render: function() {
-    console.log("Parent's State", this.state)
+    console.log("Parent's State", this.state.names)
     return (
       <div>
         <Child firstName={this.state.names}/>
