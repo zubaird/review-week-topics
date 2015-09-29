@@ -13,6 +13,7 @@ Before you move on to the next lesson, you should:
 * Answer all the readme questions
 * Rebuild ALL of the examples! This will help with retention tremendously
 * Complete all of the assignments in the readme
+* All of the assignments and examples are in the [examples](/examples) folder
 
 ### Keys for Success
 

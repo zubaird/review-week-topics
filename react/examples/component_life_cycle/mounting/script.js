@@ -20,5 +20,5 @@ var App = React.createClass({
   }
 });
 
-React.render(<App txt="this is the text prop" />, document.body);
+React.render(<App/>, document.body);
 

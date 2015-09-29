@@ -15,8 +15,70 @@ this method runs before the component mounts
 ### componentDidMount 
 this method runs after the component is mounted
 
+Here is an example that will focus on the input of a component when mounted:
+
+```
+    var App = React.createClass({
+      getInitialState: function() {
+        return {
+          txt: ""
+        };
+      },
+      componentDidMount: function(){
+        React.findDOMNode(this.refs.nameInput).focus();
+      },
+      update: function(e){
+        this.setState({txt: e.target.value})
+      },
+      render:function(){
+        return (
+          <div>
+            <input name="one" ref="nameInput" onChange={this.update} />
+            <h1>{this.state.txt}</h1>
+          </div>
+          );
+      }
+    });
+
+    React.render(<App/>, document.body);
+
+```
+
 ### componentWillUnmount 
 this method runs before the component will unmount
+
+You can see these methods in action with this example:
+```
+    var App = React.createClass({
+      getInitialState: function(){
+        return {
+          text: ""
+        }
+      },
+      componentWillMount: function(){
+        console.log('WILL MOUNT JUST RAN!')
+      },
+      componentDidMount: function(){
+        console.log('DID MOUNT JUST RAN!')
+      },
+      componentWillUnmount: function(){
+        console.log('WILL UNMOUNT JUST RAN!')
+      },
+      remove: function(){
+        React.unmountComponentAtNode(document.body)
+      },
+      render: function() {
+        return (
+          <div>
+            <h1>Hello world!</h1>
+            <button onClick={this.remove}>Remove</button>
+          </div>
+        );
+      }
+    });
+
+    React.render(<App/>, document.body)
+```
 
 ## Questions
 
@@ -30,4 +92,13 @@ this method runs before the component will unmount
 
 * Read [this](http://javascript.tutorialhorizon.com/2014/09/13/execution-sequence-of-a-react-components-lifecycle-methods/) article on the react component life cycle
 * Github Assignment 
+    - Create a component called GithubProfile
+    - When this component mounts, make an ajax called `http://api.github.com/users/` plus whatever the children props are for that component (`this.props.children`).
+    - Your component should render the username and an image of the user  
+    - You should use `componentWillMount` to make your AJAX call.
 * OMDB Assignment 
+    - Create two components, MovieSearchForm and Movie
+    - MovieSearchForm should render a form and the Movie component (which should have no information at first)
+    - A user should be able to search for a title of the movie, and when they submit the form, an ajax call should be made to `http://omdbapi.com?t=` + the value of what the user searched. 
+    - The Movie component should then be updated with the title of the movie and the image poster.
+    - You do not **need** to use any component life cycle methods, but you absolutely can.

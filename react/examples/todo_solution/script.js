@@ -97,6 +97,7 @@ var EditTodo = React.createClass({
   },
   handleEdit: function(){
     this.props.handleEdit(this.props.value, this.state.newValue)
+    this.props.display = !this.props.display
     // set state here?
   },
   render: function(){

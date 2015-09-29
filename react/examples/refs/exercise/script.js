@@ -13,7 +13,7 @@ var App = React.createClass({
       radioVal: radioVal
     })
   },
-  renderFormWithNiceHeader: function(){
+  renderNiceHeader: function(){
     return (
       <div>
         <Header>Yeah!</Header>
@@ -27,7 +27,7 @@ var App = React.createClass({
       </div>
       )
   },
-  renderFormWithMeanHeader: function(){
+  renderMeanHeader: function(){
     return (
       <div>
         <Header>Boo!</Header>
@@ -43,9 +43,9 @@ var App = React.createClass({
   },
   render: function() {
     if(this.state.checkboxVal){
-      return this.renderFormWithNiceHeader()
+      return this.renderNiceHeader()
     } else {
-      return this.renderFormWithMeanHeader()
+      return this.renderMeanHeader()
     }
   }
 });
