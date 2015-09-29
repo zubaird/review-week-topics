@@ -37,7 +37,7 @@ Solution:
 ```
     var AnswerToEverything = React.createClass({
       propTypes: {
-        number: React.proptypes.number.isRequired
+        number: React.PropTypes.number.isRequired
       },
       render : function() {
         return (
@@ -46,14 +46,16 @@ Solution:
       }
     });
 
-    React.render(<HelloName number=42/>, document.body)
+    React.render(<AnswerToEverything number={42}/>, document.body)
 ```
 
 What happens if we don't include the number property or if we change it to be something that is not a number?
 
+Note: If you're using `bower` to connect React, be sure to `react.js` and not `react.min.js`. Validation warning errors will not show up in the console if you use the minified version.
+
 ## Creating Multiple Components
 
-So far all of our applications have had just one component, but as we have seen in larger applications there are many components! Let's create a small application that has two components. `Book` and `BookList`. Our `BookList` will be a `<ul>` that contains `Book` components which will be `<li>`s. We are going to take an array of books which we will call `var books = ["Cat's Cradle", "Grapes of Wrath", "Infinite Jest"]` and iterate over the books to print out each name is the prop for our `Book` Component. Try this yourself first and check out the solution for help.
+So far all of our applications have had just one component, but as we have seen in larger applications there are many components! Let's create a small application that has two components. `Book` and `BookList`. Our `BookList` will be a `<ul>` that contains `Book` components which will be `<li>`s. We are going to take an array of books which we will call `var books = ["Cat's Cradle", "Grapes of Wrath", "Infinite Jest"]` and iterate over the books to print out each title as the prop for a `Book` Component. Try this yourself first and check out the solution for help.
 
 This is what it looks like:
 
@@ -90,7 +92,7 @@ React.render(<BookList/>,document.getElementById("bookList"))
 
 If we look in the chrome console we see the following warning: 
 
-"Warning: Each child in an array or iterator should have a unique "key" prop. Check the render method of People. See https://fb.me/react-warning-keys for more information."
+"Warning: Each child in an array or iterator should have a unique "key" prop. Check the render method of BookList. See https://fb.me/react-warning-keys for more information."
 
 Check out [this](http://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js) stackoverflow for why this is encouraged by React. How can we refactor our previous example to remove this warning? 
 
@@ -125,7 +127,7 @@ According to the React docs:
 
 "Since JSX is JavaScript, identifiers such as class and for are discouraged as XML attribute names. Instead, React DOM components expect DOM property names like className and htmlFor, respectively."
 
-### Accessing a Child components props
+### Accessing a Child component's props
 
 A parent component can access its child components using `this.props.children`. We will see this more when we discuss larger applications and refs, but you can read more [here](https://facebook.github.io/react/tips/children-props-type.html)
 
