@@ -61,7 +61,7 @@ Now let's write a method that tries to change the props of the component when th
     React.render(<Button text="Click Me!"/>,document.body)
 ```
 
-We can see in our console that the props have changed, but nothing is being rendered or changed on the page! This is because A component cannot update its own props, but can update its state and the props of its children. Props can only change when a component's parent renders the component again with different properties. This means that we will have to use something different and that is called `state` - we will examine that next! But first, some more practice.
+We can see in our console that the props have changed, but nothing is being rendered or changed on the page! This is because a component cannot update its own props, but can update its state and the props of its children. Props can only change when a component's parent renders the component again with different properties. This means that we will have to use something different and that is called `state` - we will examine that next! But first, some more practice.
 
 ## Questions 
 
