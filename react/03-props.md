@@ -127,7 +127,42 @@ According to the React docs:
 
 ### Accessing a Child components props
 
-A parent component can access its child components using `this.props.children`. We will see this more when we discuss larger applications and refs, but you can read more [here](https://facebook.github.io/react/tips/children-props-type.html)
+A parent component can access its child components using `this.props.children`. We will see this more when we discuss larger applications and refs, but you can read more [here](https://facebook.github.io/react/tips/children-props-type.html). Here is an example with this.props.children
+
+```
+  var App = React.createClass({
+    render: function() {
+      return (
+        <h1>{this.props.children}</h1>
+      );
+    }
+  });
+
+  React.render(<App>Hello Everyone!</App>, document.body)
+```
+
+Here is another example:
+
+```
+  var Parent = React.createClass({
+    render: function(){
+      return (
+        <h1><Child>Hello!</Child></h1>
+      )
+    }
+  });
+
+  var Child = React.createClass({
+    render: function(){
+      console.log(this.props)
+      return (
+        <h1>{this.props.children}</h1>
+      )
+    }
+  });
+
+  React.render(<Parent/>, document.body)
+```
 
 ## Questions
 
